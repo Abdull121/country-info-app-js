@@ -1,170 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-        *{
-            box-sizing: border-box;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body{
-           
-            font-family: 'Poppins', sans-serif;
-
-            
-         background-image: url(bg-clor.png);
-            background-size: 100% 150vh;
-            background-repeat:no-repeat;
-         ;
-            
-    
-         
-        }
-
-
-       
-    
-
-.search-box{
-    display: flex;
-flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-    gap: 8px;
-    position: relative;
-    /* border: 2px solid; */
-  
-    margin-inline: auto;
-    height: auto;
-   
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
 
-.search-box > input{
-    width: 600px;
-    padding-block: 10px;
-    border-radius: 8px;
-    outline: none;
-    border: 2px solid #000000;
-    text-indent: 38px;
-    background-color: transparent;
-    color: rgb(52, 52, 52);
-   
-
-
+  background-image: url(bg-clor.png);
+  background-size: 100% 150vh;
+  background-repeat: no-repeat;
 }
-#search{
 
-    padding: 0px 20px;
-    border-radius: 8px;
-    outline: none;
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 8px;
+  position: relative;
+  /* border: 2px solid; */
+
+  margin-inline: auto;
+  height: auto;
+}
+
+.search-box > input {
+  width: 600px;
+  padding-block: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #000000;
+  text-indent: 38px;
+  background-color: transparent;
+  color: rgb(52, 52, 52);
+}
+#search {
+  padding: 0px 20px;
+  border-radius: 8px;
+  outline: none;
   border: none;
-    background-color: rgb(86, 86, 86);
-    color: #ffffff;
-    cursor: pointer;
+  background-color: rgb(86, 86, 86);
+  color: #ffffff;
+  cursor: pointer;
 }
- i{
-    position: absolute;
+i {
+  position: absolute;
   margin-right: 640px;
   margin-top: 10px;
 }
-#country-box{
-    position: absolute;
-    left: 50px;
-    top:180px;
-    padding-bottom: 20px;
-   
+#country-box {
+  position: absolute;
+  left: 50px;
+  top: 180px;
+  padding-bottom: 20px;
 }
- h1{
-    margin: 20px 0px;
-    text-align: center;
-    color: #222222;
-   
+h1 {
+  margin: 20px 0px;
+  text-align: center;
+  color: #222222;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #202020;
+  /* border: 2px solid; */
+}
+.image > img {
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid;
+}
+
+::placeholder {
+  color: #4a4a4a;
+}
+span {
+  position: absolute;
+  margin-top: 50px;
+  margin-right: 380px;
+  color: red;
+}
+
+@media (max-width: 688px) {
+  #search {
+    margin-top: 40px;
+    padding: 12px 30px;
+  }
+  i {
+    margin-left: 80px;
+  }
+  span {
+    font-size: 15px;
     margin-top: 50px;
-    font-size: 18px;
-    color: #202020;
-    /* border: 2px solid; */
-}
-.image > img{
-    width: 300px;
-    border-radius: 20px;
-    border: 1px solid;
-}
+    margin-right: 100px;
+  }
 
-::placeholder{
-    color: #4a4a4a;
-}
-span{
-    position: absolute;
-   margin-top: 50px;
-   margin-right: 380px;
-   color:red;
-}
-
-
-@media(max-width:688px){
-
-    #search{
-        margin-top: 40px;
-        padding: 12px 30px;
-    }
-    i{
-        margin-left: 80px;
-    }
-    span{
-        font-size: 15px;
-        margin-top: 50px;
-   margin-right: 100px;
-       
-    }
-
-    #country-box{
+  #country-box {
     position: absolute;
     left: 50px;
-    top:230px;
-   
-}
+    top: 230px;
+  }
 
-body{
-           
-           font-family: 'Poppins', sans-serif;
+  body {
+    font-family: "Poppins", sans-serif;
 
-           
-        background-image: url(bg-clor.png);
-           background-size: auto;
-           background-repeat:no-repeat;
-        
-           
-   
-        
-       }
+    background-image: url(bg-clor.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
 
-@media (max-width:500px){
-    i{
+  @media (max-width: 500px) {
+    i {
       margin: 0px;
       left: 10px;
-      top:10px
+      top: 10px;
     }
 
-    span{
-    
-   margin-right: 0px;
-       
+    span {
+      margin-right: 0px;
     }
-}
+  }
 
-@media(max-width:350px){
-    #country-box{
-      
-        left: 10px;
-        top:200px;
-       
-       
+  @media (max-width: 350px) {
+    #country-box {
+      left: 10px;
+      top: 200px;
     }
-}
-
+  }
 }
